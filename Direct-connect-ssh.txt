@@ -1,0 +1,13 @@
+vim config
+
+Host <namegive>
+  HostName <public_ip>
+  User ec2-user
+  IdentityFile ~/.ssh/<pemfile.pem>
+  #if you do not have pem file you can add your id_rsa.pub in machine authorized_keys (now not require IdentityFile)
+  
+  ```bash
+  ssh <hostname>
+  ```
+  for more details 
+  https://cloud-gc.readthedocs.io/en/latest/chapter06_appendix/ssh-config.html
